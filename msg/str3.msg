@@ -1,3 +1,3 @@
 string first_number
 string sign
-string second_numberT
+string second_number

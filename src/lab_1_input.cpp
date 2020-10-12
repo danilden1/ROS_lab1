@@ -11,11 +11,18 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
     ros::Publisher pub = n.advertise<std_msgs::String>("/str", 10);
     ros::Rate loop_rate(1);
+    //lab_1::str3;
+   // lab_1::str3 str;
+   // str.first_number = "10";
+   // str.second_number = "20";
+    //str.sign = "+";
     std_msgs::String st;
     st.data = "Hi!";
     while(1)
     {
-        cout << st << endl;
+        //cout << str.first_number << endl;
+        //cout << str.sign << endl;
+        //cout << str.second_number << endl;
         pub.publish(st);
         loop_rate.sleep();
     }
